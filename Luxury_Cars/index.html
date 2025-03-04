@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <link rel="icon" href= "icon.jpg" type="image/x-icon" />
+        <title>
+            Limosine 
+        </title>
+    <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="icon.jpg" alt="Luxury Limousine" width="100px" height="100px">
+                </div>
+                <div class="menu">
+                    <ul class="nav-links">
+                        <li><a href="#home"><i class='bx bx-home-alt-2'></i> Home</a></li>
+                        <li><a href="#services"> Services  </a></li>
+                        <li><a href="#about"> About Us  </a></li>
+                        <li><a href="#contact"> Contact Us  </a></li>
+                        <li><a href="#fleet"> Our Fleet </a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:info@swisschauffeurs.com" class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <span>info@swisschauffeurs.com</span>
+                    </a>
+                    <a href="tel:+" class="contact-item">
+                        <i class='bx bx-phone-call'></i>
+                        <span>+41 76 337 90 29</span>
+                    </a>
+                </div>
+                <div class="mobile-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+    </header>
+
+
+
+
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="hero-text">
+            
+            <h1>Experience </h1> 
+            <h1>the <span>Ultimate</span> Luxury</h1>
+            <div class="hero-img">
+                <img src="limousine.png" alt="Limousine">
+            </div>
+        </div>
+    </div>
+    <div class="hero-stats">
+        <div class="hero-stat-left">
+            <div class="hero-stat-value">250+</div>
+            <div class="hero-stat-label">Luxury Vehicles</div>
+        </div>
+        <div class="hero-stat-right">
+            <div class="hero-stat-value">15+</div>
+            <div class="hero-stat-label">Years of Service</div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- Ovde isod je mapa idu pre mape jos neke stvari --> 
+
+    <div class="map" id="travel-map">
+        <div class="main clearfix">
+            <div class="homeMargina1">
+                <h2 class="naslov">Destinations <span>You'll Love</span></h2>
+                <div class="map-cont">
+                    <div class="map-panel">
+                        <div id="location-zurich" class="map-location" style="display: none;">
+                            <div class="map-city">Zurich</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">10 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">15 min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">120 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-bern" class="map-location" style="display: none;">
+                            <div class="map-city">Bern</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">126 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">1h 26min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">604.8 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-basel" class="map-location" style="display: none;">
+                            <div class="map-city">Basel</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">92 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">1h 5min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">450.8 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-davos" class="map-location" style="display: none;">
+                            <div class="map-city">Davos</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">153 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">1h 56min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">734.4 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-geneva" class="map-location" style="display: none;">
+                            <div class="map-city">Geneva</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">284 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">3h 3min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">1363.2 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-stmoritz" class="map-location" style="display: none;">
+                            <div class="map-city">St. Moritz</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">208 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">2h 44min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">998.4 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-zermatt" class="map-location" style="display: block;">
+                            <div class="map-city">Zermatt</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">254 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">3h 40min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">1219.2 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div id="location-lugano" class="map-location" style="display: none;">
+                            <div class="map-city">Lugano</div>
+                            <div class="map-pane-box">
+                                <div class="map-panel-left">
+                                    <div class="map-label">Distance from Airport</div>
+                                    <div class="map-distance">223 km</div>
+                                    <div class="map-label">Estimated Duration</div>
+                                    <div class="map-duration">2h 34min</div>
+                                </div>
+                                <div class="map-panel-right">
+                                    <div class="map-label">Mercedes V Class</div>
+                                    <img src="mercedes-v-class-side.png" alt="Mercedes V Class" class="vehicle-image">
+                                    <div class="map-label">Price</div>
+                                    <div class="map-price">1070.4 CHF</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
+                    <img src="map-switzeland.png" alt="Switzerland Map">
+                    
+                    <!-- Interactive points on the map -->
+                    <div id="zurich" class="pulse pulsating-circle zurich"></div>
+                    <div id="bern" class="pulse pulsating-circle bern"></div>
+                    <div id="basel" class="pulse pulsating-circle basel"></div>
+                    <div id="davos" class="pulse pulsating-circle2 davos"></div>
+                    <div id="geneva" class="pulse pulsating-circle3 geneva"></div>
+                    <div id="stmoritz" class="pulse pulsating-circle stmoritz"></div>
+                    <div id="zermatt" class="pulse pulsating-circle zermatt"></div>
+                    <div id="lugano" class="pulse pulsating-circle3 lugano"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    
+
+    </body>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const menu = document.querySelector('.menu');
+            const contactInfo = document.querySelector('.contact-info');
+            
+            mobileToggle.addEventListener('click', function() {
+                menu.classList.toggle('active');
+                contactInfo.classList.toggle('active');
+                
+                // Change icon between menu and close
+                const icon = mobileToggle.querySelector('i');
+                if (icon.classList.contains('bx-menu')) {
+                    icon.classList.remove('bx-menu');
+                    icon.classList.add('bx-x');
+                } else {
+                    icon.classList.remove('bx-x');
+                    icon.classList.add('bx-menu');
+                }
+            });
+        });
+    </script>
+</html>
+
