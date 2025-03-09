@@ -1,0 +1,159 @@
+:root {
+    --clr-black: #0A0A0A;
+    --clr-gold: #D4AF37;
+    --clr-white: #F8F8FF;
+
+    /* Font Sizes */
+    --fs-small: 0.875rem;   /* 14px */
+    --fs-base: 1rem;         /* 16px */
+    --fs-medium: 1.125rem;   /* 18px */
+    --fs-large: 1.25rem;     /* 20px */
+    --fs-xl: 1.5rem;         /* 24px */
+    --fs-xxl: 2rem;          /* 32px */
+    --fs-xxxl: 2.5rem;       /* 40px */
+    --fs-hero: 4rem;         /* 64px */
+}
+
+/* Media queries for responsive font sizes */
+@media (max-width: 768px) {
+    :root {
+        --fs-large: 1.125rem;
+        --fs-xl: 1.25rem;
+        --fs-xxl: 1.75rem;
+        --fs-xxxl: 2rem;
+        --fs-hero: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --fs-small: 0.75rem;
+        --fs-base: 0.875rem;
+        --fs-medium: 1rem;
+        --fs-large: 1.125rem;
+        --fs-xl: 1.125rem;
+        --fs-xxl: 1.5rem;
+        --fs-xxxl: 1.75rem;
+        --fs-hero: 2rem;
+    }
+}
+
+.main {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.paragraph {
+    margin: 20px auto 80px;
+    text-align: left;
+    font-size: var(--fs-large);
+    max-width: 1000px;
+    padding: 0 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media queries for paragraph margins */
+@media (max-width: 1400px) {
+    .paragraph {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .paragraph {
+        max-width: 95%;
+    }
+}
+
+.paragraph p {
+    font-size: var(--fs-base);
+}
+
+.paragraph h1 span {
+    color: var(--clr-gold);
+}
+
+.paragraph p span {
+    color: var(--clr-gold);
+}
+
+.automobili {
+    margin-top: 6rem;
+}
+
+@media (max-width: 768px) {
+    .automobili {
+        margin-top: 4rem;
+    }
+}
+
+.automobili h1 {
+    font-size: var(--fs-xxxl);
+}
+
+.linija {
+    height: 2px;
+    width: 20%;
+    margin: 20px auto;
+    background: linear-gradient(to right, transparent, var(--clr-gold), transparent);
+}
+
+@media (max-width: 768px) {
+    .linija {
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    .linija {
+        width: 60%;
+    }
+}
+
+.automobili .automobil {
+    margin-bottom: 3rem;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 35%;
+}
+
+.automobil img {
+    width: 80%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 1px var(--clr-gold));
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-top: 3rem;
+    }
+    
+    .automobil img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        margin-top: 2rem;
+    }
+    
+    .automobil img {
+        max-height: 200px;
+    }
+}
+
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
